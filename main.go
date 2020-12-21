@@ -58,7 +58,7 @@ func main() {
 	parseToNode(m)
 
 	for str, cnt := range count {
-		if cnt >= 2 {
+		if cnt >= 3 {
 			fmt.Printf("%s,%d\n", str, cnt)
 		}
 	}
