@@ -39,7 +39,7 @@ func parseToNode(m *mecab.MeCab) {
 		node := tg.ParseToNode(lt)
 		for {
 			features := strings.Split(node.Feature(), ",")
-			if features[0] == "連体詞" {
+			if features[0] == "名詞" {
 				count[node.Surface()] += 1
 			}
 			if node.Next() != nil {
